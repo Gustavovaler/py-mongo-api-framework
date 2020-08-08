@@ -1,0 +1,18 @@
+{
+    "empleados": [
+        {"nombre": "Gustavo", "edad":22, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Marcelo", "edad":33, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Marcia", "edad":55, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Maria", "edad":47, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Cristian", "edad":18, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Lucas", "edad":54, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Luciana", "edad":24, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Martina", "edad":24, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Jose", "edad":25, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Hector", "edad":33, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Sofia", "edad":47, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Gonzalo", "edad":28, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Patricia", "edad":26, "conocimientos":["jardineria", "pintura"]},
+        {"nombre": "Caloncho", "edad":26, "conocimientos":["jardineria", "pintura"]}
+    ]
+}
