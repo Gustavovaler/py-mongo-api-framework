@@ -1,10 +1,12 @@
 from aiohttp import web
 from controllers.Usuarios import UsuariosController
+from controllers.Index import IndexController
 
-usuarios = UsuariosController()
 
+
+    
 r = [
-    web.get('/', usuarios.handle),
-    web.get('/users', usuarios.handle),
-    web.post('/', usuarios.handle)
+    web.get('/',IndexController().index),
+    web.get('/users/{numero}', UsuariosController().index),
+    web.post('/', IndexController().store)
     ]

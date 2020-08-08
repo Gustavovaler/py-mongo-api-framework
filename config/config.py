@@ -5,4 +5,4 @@
 
 DB_HOST = 'localhost'
 DB_PORT = 27017
-DB_NAME = "Gustavo"
+DB_NAME = "gustavo"
