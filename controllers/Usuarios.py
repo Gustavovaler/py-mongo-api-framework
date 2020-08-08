@@ -3,6 +3,7 @@ import asyncio
 from core.app import get_data
 
 
+
 class UsuariosController(Controller):
     def __init__(self):
         super().__init__()
