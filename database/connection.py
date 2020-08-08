@@ -1,9 +1,9 @@
 from pymongo import MongoClient
-from config.config  import db_host, db_port, db_name
+from config.config  import DB_HOST, DB_NAME, DB_PORT
 
-client = MongoClient(db_host, db_port)
+client = MongoClient(DB_HOST, DB_PORT)
 
-db = client[db_name]
+db = client[DB_NAME]
 
 
 

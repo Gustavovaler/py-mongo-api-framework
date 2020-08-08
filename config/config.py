@@ -1,5 +1,8 @@
 
 
-db_host = 'localhost'
-db_port = 27017
-db_name = "Gustavo"
+
+#-----DATABASE SETTINGS----- 
+
+DB_HOST = 'localhost'
+DB_PORT = 27017
+DB_NAME = "Gustavo"

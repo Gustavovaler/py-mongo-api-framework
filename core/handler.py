@@ -1,11 +1,16 @@
 from aiohttp import web
 from .app import get_data
-from database.connection import db
+
 
 class Controller:
+    """
+        self.web = aiohttp.web  
+        Rewrite m_get, m_post, m_update, m_delet mothods into 
+            your controller class.
+    """
     def __init__(self):
         self.web = web
-        self.db  = db
+       
 
     async def handle(self,request):
         self.request = request
