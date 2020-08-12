@@ -13,4 +13,4 @@ PORT = 80
 
 DB_HOST = 'localhost'
 DB_PORT = 27017
-DB_NAME = "gustavo"
+DB_NAME = "Gustavo"
