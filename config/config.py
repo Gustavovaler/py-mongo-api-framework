@@ -1,5 +1,13 @@
 
+#----- GLOBAL SETTINGS-----
 
+DEBUG = True
+
+
+#----- APPLICATION SETTINGS-----
+
+HOST = 'localhost'
+PORT = 80
 
 #-----DATABASE SETTINGS----- 
 

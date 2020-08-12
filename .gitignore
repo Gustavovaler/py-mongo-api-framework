@@ -136,3 +136,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Propios
+
+srcipt1.py
+w.js
+result.js
