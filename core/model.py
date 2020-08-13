@@ -20,5 +20,10 @@ class Model:
         return all_documents
 
     def find_one(self, identifier):
-        return identifier
+        if len(identifier)== 1 :            
+            result = self.collection.find_one(identifier)
+            if result == None:
+                return None
+            del result['_id']
+            return result
         
