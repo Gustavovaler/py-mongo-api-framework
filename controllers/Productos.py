@@ -11,5 +11,3 @@ class ProductosController(Controller):
         self.model = productos.Producto()
         self.model.set_collection("products")
 
-    def index(self, request):        
-        return  self.web.json_response(self.model.all())

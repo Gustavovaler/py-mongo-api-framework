@@ -19,4 +19,6 @@ class Model:
             del document['_id']
         return all_documents
 
+    def find_one(self, identifier):
+        return identifier
         

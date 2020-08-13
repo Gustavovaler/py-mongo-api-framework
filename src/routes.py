@@ -4,7 +4,8 @@ from controllers.Productos import ProductosController
 
     
 r = [
-    web.get('/users/', UsuariosController().index),
+    web.get('/api/v1/users', UsuariosController().index),
+    web.get('/api/v1/users/{id}', UsuariosController().show),
     web.get('/products', ProductosController().index)
    
     ]
