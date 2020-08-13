@@ -17,11 +17,17 @@ class Controller:
         return self.web.json_response({"method":request.method})
 
     async def store(self, request):
-        
-        return self.web.json_response({"method":request.method})
+        data = await request.post()
+        keys =  [d for d in data ]
+        document = {}
+        for key in keys:
+            document[key] = data[key]        
+        self.model.insert_one(document)
+        return self.web.json_response({})
 
     async def delete(self, request):
         return self.web.json_response({"method":request.method})
     
-    async def show(self, request):        
-        return self.web.json_response(request.match_info)
+    async def show(self, request):
+        data = self.model.find_one(request.match_info)
+        return self.web.json_response(data)

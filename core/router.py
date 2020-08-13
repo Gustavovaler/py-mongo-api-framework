@@ -1,5 +1,5 @@
 from .app import app
-from src.routes import r
+from src.routes import urls
 
-routes = app.add_routes(r)
+routes = app.add_routes(urls)
 

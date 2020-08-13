@@ -26,4 +26,7 @@ class Model:
                 return None
             del result['_id']
             return result
-        
+    
+    def insert_one(self,document):
+        res = self.collection.insert_one(document)
+        return res

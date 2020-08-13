@@ -6,11 +6,11 @@ import asyncio
 
 class UsuariosController(Controller):
     """
-    method  index(self, request)
-    method  show(self, request)
-    method  update(self, request)
-    method  delete(self,request)
-    method  store(self, request)
+    method  async index(self, request)
+    method  async show(self, request)
+    method  async update(self, request)
+    method  async delete(self,request)
+    method  async store(self, request)
 
     """
 
@@ -19,9 +19,10 @@ class UsuariosController(Controller):
         self.model = usuarios.Usuario()
         self.model.set_collection("users")
 
-    def show(self, request):
-        data = self.model.find_one(request.match_info)
-        return self.web.json_response(data)
+
+    
+
+
 
     
 

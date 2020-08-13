@@ -7,7 +7,7 @@ DEBUG = True
 #----- APPLICATION SETTINGS-----
 
 HOST = 'localhost'
-PORT = 80
+PORT = 8080
 
 #-----DATABASE SETTINGS----- 
 
