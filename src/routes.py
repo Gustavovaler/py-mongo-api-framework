@@ -9,7 +9,7 @@ urls = [
     web.post('/api/v1/users', UsuariosController().store),
     web.get('/api/v1/products', ProductosController().index),
     web.post('/api/v1/products', ProductosController().store),
-    web.get('/api/v1/products/{modelo}', ProductosController().show),
+    web.get('/api/v1/products/{id}', ProductosController().show),
     web.post('/api/v1/doctors', DoctorsController().store),
     web.get('/api/v1/doctors', DoctorsController().index)
    

@@ -29,5 +29,7 @@ class Controller:
         return self.web.json_response({"method":request.method})
     
     async def show(self, request):
+
         data = self.model.find_one(request.match_info)
+                
         return self.web.json_response(data)
