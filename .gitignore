@@ -139,6 +139,4 @@ cython_debug/
 
 # Propios
 
-srcipt1.py
-w.js
-result.js
+doc.py

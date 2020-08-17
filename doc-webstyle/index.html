@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doc PyMongoFramework</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+<div class="container">
+
+
+	<hr>
+	<h2>Crear una ruta</h2>
+
+	<p class="explicacion">
+		Crear nuestra ruta es bastante facil, solo debemos crear otro objeto del tipo <strong>web.route</strong>
+		como se muestra en la imagen. 
+		Para una ruta que permita el método <strong> GET</strong> solo debemos agregar <strong>web.get()</strong> como un objeto de 
+		la lista <strong>urls[]</strong> que ya viene creada en blanco con la creación del proyecto.
+		El primer parametro obligatorio es le path que tendrá el recuro y como segundo parámetro
+		tambien obligatorio una funcion que maneje la petición. 
+		Veamos el ejemplo:
+	</p>
+
+	<img src="images/carbon_rutas_1.png" alt="" width="800px">
+	<br>
+	<p class="explicacion">
+		Note que el ejemplo de arriba hemos puesto como función manejadora o <i>handler</i> una 
+		instancia de controlador y la llamada a su método ( en este caso <strong>index</strong>).
+		Es necesario <i>importar el controlador</i> que por defecto se encuentra en <strong>/controllers </strong> carpeta.
+	</p>
+
+	<p class="explicacion">
+		Además del verbo <strong>GET</strong> disponemos de los verbos <strong>POST - PUT - DELETE</strong> como podemos ver en la siguiente foto.
+		El conjunto http-verbo & path  son los que determinan a que método del controlador debemos apuntar.
+	</p>
+
+	<img src="images/carbon_rutas_2.png" alt="" width="800px">
+
+	<p class="explicacion">
+		Este comportamiento ya está predefinido y al crear el <strong><i>Recurso</i></strong> por defecto se configura todo
+		como en la foto de arriba. Ésto ya provee la implementacion de <strong>CRUD</strong> básico. Este comportamiento 
+		puede ser modificado reescribiendo el método del controlador que desee. 
+
+	</p>
+
+</div>
+
+
+</body>
+</html>
