@@ -16,4 +16,4 @@
 
 
 
-![Alt text](doc-webstyle/images/inicio.png?raw=true "Estructura de directorios")
+![Alt text](doc-webstyle/images/inicio2.png?raw=true "Estructura de directorios")
