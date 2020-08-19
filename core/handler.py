@@ -26,7 +26,8 @@ class Controller:
         return self.web.json_response({})
 
     async def delete(self, request):
-        return self.web.json_response({"method":request.method})
+        res = self.model.delete_one(request.match_info)
+        return self.web.json_response(res)
     
     async def show(self, request):
 

@@ -49,3 +49,20 @@ class Model:
     def insert_one(self,document):
         res = self.collection.insert_one(document)
         return res
+
+    def delete_one(self, identifier):
+        try :
+            if identifier['id']:
+               result = self.collection.delete_one({'_id':ObjectId(identifier['id'])})
+               if result == None:
+                    return None
+               result = self.normalize_id([result])
+               return result[0]
+        except:
+            if len(identifier) == 1 :        
+                result = self.collection.delete_one(identifier)
+                if result == None:
+                    return None 
+
+                return True
+    
