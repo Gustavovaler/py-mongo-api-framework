@@ -13,6 +13,6 @@ urls = [
     web.get('/api/v1/products/{id}', ProductosController().show),
     web.post('/api/v1/doctors', DoctorsController().store),
     web.get('/api/v1/doctors', DoctorsController().index),
-    web.delete('/api/v1/doctors/{talle}', DoctorsController().delete)
+    web.delete('/api/v1/doctors/{id}', DoctorsController().delete)
    
     ]
