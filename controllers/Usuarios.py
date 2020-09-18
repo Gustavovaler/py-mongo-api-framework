@@ -15,7 +15,6 @@ class UsuariosController(Controller):
     """
 
     def __init__(self):
-        super().__init__()
         self.model = usuarios.Usuario()
         self.model.set_collection("users")
 
